@@ -80,3 +80,11 @@ When triaging binaries, this tool can yield **false positives** by flagging enti
 3. **High Entropy Signature:** Because the scanner analyzes raw byte frequencies without parsing the file format's structural layout, an embedded asset folder containing complex UI graphics or large images will generate a sustained entropy plateau between **7.5 and 8.0**.
 
 > **Analysis Tip:** When evaluating an unknown binary that throws a high-entropy alert, cross-reference the offset locations with a PE/ELF parser (like `pefile` or `readelf`) to check if the high-entropy block maps to a standard resource section (like `.rsrc`) rather than code execution sections (like `.text`).
+
+---
+
+### On system binaries (/bin/cat): As expected below threshold
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fb0d0d9d-a0e2-4f77-8e5e-0523650713cc" />
+
+### On compressed files (jpg) : Above threshold due to compressed data
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/19340d01-c1f2-420c-8078-096d6ee981cd" />
