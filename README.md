@@ -3,7 +3,6 @@
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 **Limitation of Liability:** The author is not responsible for any damage, legal repercussions caused by the use of this software. By using bintropy, you agree to assume all associated risks and liabilities.
 ---
 
